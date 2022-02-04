@@ -13,7 +13,7 @@
         android:ems="10"
         android:hint="Enter USD amount"
         android:inputType="number"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/dollarView"
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:text="Dollar"
@@ -44,7 +44,7 @@
         android:ems="10"
         android:hint="Enter LBP amount"
         android:inputType="number"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="0.67" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/lbpView"
         android:layout_width="130dp"
         android:layout_height="35dp"
         android:text="Lebanese Pound"
@@ -68,38 +68,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName7"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="$"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toEndOf="@+id/lbp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.389" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="LBP"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toEndOf="@+id/lbp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.622" />
-
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txt1"
         android:layout_width="400dp"
         android:layout_height="50dp"
         android:text="Dollar to LBP Exchange Rate Today "
@@ -117,7 +87,7 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt2"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:lineSpacingExtra="8sp"
@@ -134,7 +104,7 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.08"
@@ -157,5 +127,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:text="LBP"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
