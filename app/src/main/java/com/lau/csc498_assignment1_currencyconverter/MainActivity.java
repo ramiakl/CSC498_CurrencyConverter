@@ -27,13 +27,22 @@ public class MainActivity extends AppCompatActivity {
         String dollar_str = dollar_amount.getText().toString();
         String lbp_str = lbp_amount.getText().toString();
         message= dollar_str + " "+ lbp_str;
-        //Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
-        //toast.show();
-
+        
         if(!dollar_str.isEmpty() && !lbp_str.isEmpty()){
             message = "Please enter one entry either dollar or lbp";
         }
-
+        else if(!lbp_str.isEmpty()){
+            lbp = Integer.parseInt(lbp_str);
+            dollar = lbp / rate;
+            dollar_amount.setText(lbp);
+            message = "Good investment, $ to the moon !";
+        }
+        else if (!dollar_str.isEmpty()) {
+            dollar = Integer.parseInt(dollar_str);
+            lbp = dollar * rate;
+            lbp_amount.setText(lbp);
+            message = "Make it rain !";
+        }
         else {
             message = "Please enter the amount you want to convert";
         }
